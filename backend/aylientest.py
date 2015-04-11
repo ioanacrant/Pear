@@ -51,7 +51,7 @@ def get_img(url):
 
 	return loc
 
-urls = get_category_links(source_url)[0:2]
+urls = get_category_links(source_url)[0:3]
 
 def createDataSet():
 	for url in urls:

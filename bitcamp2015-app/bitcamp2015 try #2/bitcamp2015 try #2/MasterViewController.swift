@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController, NSURLConnectionDelegate {
 
     var objects = [News]()
     
     var testImage = UIImage(named: "ScreenShot")
+    
+    lazy var data = NSMutableData()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -93,7 +95,34 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("showDetail", sender: self)
     }
+    
+    
+    
 
+    func startConnection(){
+        let urlPath: String = "http://localhost:5000/"
+        var url: NSURL = NSURL(string: urlPath)!
+        var request: NSURLRequest = NSURLRequest(URL: url)
+        var connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: false)!
+        connection.start()
+    }
 
+    
+    func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
+        self.data.appendData(data)
+        println(data)
+        
+        var dataFile = data
+    }
+    
+    let json = JSON(data: dataFile)
+    
+    func connectionDidFinishLoading(connection: NSURLConnection!) {
+        var err: NSError
+        // throwing an error on the line below (can't figure out where the error message is)
+        var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
+        println(jsonResult)
+    }
+    
+    
 }
-
