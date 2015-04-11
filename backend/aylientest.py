@@ -1,5 +1,6 @@
 from aylienapiclient import textapi
 from bs4 import BeautifulSoup
+import requests
 from urllib2 import urlopen
 from flask import Flask, request
 from flask.ext.restful import Resource, Api
@@ -20,10 +21,10 @@ client = textapi.Client("8e6fd4b7", "596bdf877a7e06c5ba5d051b15a0733b")
 
 #Gets source url to be readable as BeautifulSoup
 def make_soup(url):
-	html = urlopen(url).read()
-	return BeautifulSoup(html, "lxml")
+	html = requests.get(url).text
+	return BeautifulSoup(html)
 
-#Gets all popular articles form tech crunch when called 
+#Gets all popular articles form tech crunch when called
 def get_category_links(section_url):
 	soup = make_soup(section_url)
 	loc = soup.find("ul", "river lc-padding")
@@ -50,7 +51,7 @@ def get_img(url):
 
 	return loc
 
-urls = get_category_links(source_url)
+urls = get_category_links(source_url)[0:2]
 
 def createDataSet():
 	for url in urls:
