@@ -54,7 +54,7 @@ urls = get_category_links(source_url)
 
 def createDataSet():
 	for url in urls:
-		summary = client.Summarize({"url": url, "sentences_number": 3}) #Gets 3 sentence summary using API
+		summary = client.Summarize({"url": url, "sentences_number": 2}) #Gets 3 sentence summary using API
 		dataStruct = {"title": get_title(url), "sentences": summary["sentences"], "image": get_img(url), "url": url}
 		dataSet["news"].append(dataStruct)
 
