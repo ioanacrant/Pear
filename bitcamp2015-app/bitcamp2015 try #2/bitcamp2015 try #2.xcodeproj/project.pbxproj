@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDE841B31AD95AD5000A2A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841B21AD95AD5000A2A52 /* AppDelegate.swift */; };
+		CDE841B51AD95AD5000A2A52 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841B41AD95AD5000A2A52 /* MasterViewController.swift */; };
+		CDE841B71AD95AD5000A2A52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841B61AD95AD5000A2A52 /* DetailViewController.swift */; };
+		CDE841BA1AD95AD5000A2A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE841B81AD95AD5000A2A52 /* Main.storyboard */; };
+		CDE841BC1AD95AD5000A2A52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE841BB1AD95AD5000A2A52 /* Images.xcassets */; };
+		CDE841BF1AD95AD5000A2A52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE841BD1AD95AD5000A2A52 /* LaunchScreen.xib */; };
+		CDE841CB1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841CA1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift */; };
+		CDE841D51AD95AF7000A2A52 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841D41AD95AF7000A2A52 /* News.swift */; };
+		CDE841DB1AD96B9F000A2A52 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE841DA1AD96B9F000A2A52 /* NewsCell.xib */; };
+		CDE841DD1AD96CB9000A2A52 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841DC1AD96CB9000A2A52 /* NewsCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE841C51AD95AD5000A2A52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE841A51AD95AD5000A2A52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE841AC1AD95AD5000A2A52;
+			remoteInfo = "bitcamp2015 try #2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDE841AD1AD95AD5000A2A52 /* bitcamp2015 try #2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bitcamp2015 try #2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE841B11AD95AD5000A2A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE841B21AD95AD5000A2A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDE841B41AD95AD5000A2A52 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CDE841B61AD95AD5000A2A52 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CDE841B91AD95AD5000A2A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDE841BB1AD95AD5000A2A52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CDE841BE1AD95AD5000A2A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CDE841C41AD95AD5000A2A52 /* bitcamp2015 try #2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bitcamp2015 try #2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE841C91AD95AD5000A2A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE841CA1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2015_try__2Tests.swift; sourceTree = "<group>"; };
+		CDE841D41AD95AF7000A2A52 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		CDE841DA1AD96B9F000A2A52 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		CDE841DC1AD96CB9000A2A52 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE841AA1AD95AD5000A2A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE841C11AD95AD5000A2A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDE841A41AD95AD5000A2A52 = {
+			isa = PBXGroup;
+			children = (
+				CDE841AF1AD95AD5000A2A52 /* bitcamp2015 try #2 */,
+				CDE841C71AD95AD5000A2A52 /* bitcamp2015 try #2Tests */,
+				CDE841AE1AD95AD5000A2A52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE841AE1AD95AD5000A2A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE841AD1AD95AD5000A2A52 /* bitcamp2015 try #2.app */,
+				CDE841C41AD95AD5000A2A52 /* bitcamp2015 try #2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE841AF1AD95AD5000A2A52 /* bitcamp2015 try #2 */ = {
+			isa = PBXGroup;
+			children = (
+				CDE841B21AD95AD5000A2A52 /* AppDelegate.swift */,
+				CDE841B41AD95AD5000A2A52 /* MasterViewController.swift */,
+				CDE841D41AD95AF7000A2A52 /* News.swift */,
+				CDE841B61AD95AD5000A2A52 /* DetailViewController.swift */,
+				CDE841B81AD95AD5000A2A52 /* Main.storyboard */,
+				CDE841DA1AD96B9F000A2A52 /* NewsCell.xib */,
+				CDE841DC1AD96CB9000A2A52 /* NewsCell.swift */,
+				CDE841BB1AD95AD5000A2A52 /* Images.xcassets */,
+				CDE841BD1AD95AD5000A2A52 /* LaunchScreen.xib */,
+				CDE841B01AD95AD5000A2A52 /* Supporting Files */,
+			);
+			path = "bitcamp2015 try #2";
+			sourceTree = "<group>";
+		};
+		CDE841B01AD95AD5000A2A52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE841B11AD95AD5000A2A52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE841C71AD95AD5000A2A52 /* bitcamp2015 try #2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE841CA1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift */,
+				CDE841C81AD95AD5000A2A52 /* Supporting Files */,
+			);
+			path = "bitcamp2015 try #2Tests";
+			sourceTree = "<group>";
+		};
+		CDE841C81AD95AD5000A2A52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE841C91AD95AD5000A2A52 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE841AC1AD95AD5000A2A52 /* bitcamp2015 try #2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE841CE1AD95AD5000A2A52 /* Build configuration list for PBXNativeTarget "bitcamp2015 try #2" */;
+			buildPhases = (
+				CDE841A91AD95AD5000A2A52 /* Sources */,
+				CDE841AA1AD95AD5000A2A52 /* Frameworks */,
+				CDE841AB1AD95AD5000A2A52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bitcamp2015 try #2";
+			productName = "bitcamp2015 try #2";
+			productReference = CDE841AD1AD95AD5000A2A52 /* bitcamp2015 try #2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDE841C31AD95AD5000A2A52 /* bitcamp2015 try #2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE841D11AD95AD5000A2A52 /* Build configuration list for PBXNativeTarget "bitcamp2015 try #2Tests" */;
+			buildPhases = (
+				CDE841C01AD95AD5000A2A52 /* Sources */,
+				CDE841C11AD95AD5000A2A52 /* Frameworks */,
+				CDE841C21AD95AD5000A2A52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE841C61AD95AD5000A2A52 /* PBXTargetDependency */,
+			);
+			name = "bitcamp2015 try #2Tests";
+			productName = "bitcamp2015 try #2Tests";
+			productReference = CDE841C41AD95AD5000A2A52 /* bitcamp2015 try #2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE841A51AD95AD5000A2A52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Suraj Rampure";
+				TargetAttributes = {
+					CDE841AC1AD95AD5000A2A52 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CDE841C31AD95AD5000A2A52 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = CDE841AC1AD95AD5000A2A52;
+					};
+				};
+			};
+			buildConfigurationList = CDE841A81AD95AD5000A2A52 /* Build configuration list for PBXProject "bitcamp2015 try #2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDE841A41AD95AD5000A2A52;
+			productRefGroup = CDE841AE1AD95AD5000A2A52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE841AC1AD95AD5000A2A52 /* bitcamp2015 try #2 */,
+				CDE841C31AD95AD5000A2A52 /* bitcamp2015 try #2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE841AB1AD95AD5000A2A52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE841BA1AD95AD5000A2A52 /* Main.storyboard in Resources */,
+				CDE841BF1AD95AD5000A2A52 /* LaunchScreen.xib in Resources */,
+				CDE841DB1AD96B9F000A2A52 /* NewsCell.xib in Resources */,
+				CDE841BC1AD95AD5000A2A52 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE841C21AD95AD5000A2A52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE841A91AD95AD5000A2A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE841B71AD95AD5000A2A52 /* DetailViewController.swift in Sources */,
+				CDE841B51AD95AD5000A2A52 /* MasterViewController.swift in Sources */,
+				CDE841D51AD95AF7000A2A52 /* News.swift in Sources */,
+				CDE841B31AD95AD5000A2A52 /* AppDelegate.swift in Sources */,
+				CDE841DD1AD96CB9000A2A52 /* NewsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE841C01AD95AD5000A2A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE841CB1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE841C61AD95AD5000A2A52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE841AC1AD95AD5000A2A52 /* bitcamp2015 try #2 */;
+			targetProxy = CDE841C51AD95AD5000A2A52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDE841B81AD95AD5000A2A52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE841B91AD95AD5000A2A52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDE841BD1AD95AD5000A2A52 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE841BE1AD95AD5000A2A52 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE841CC1AD95AD5000A2A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDE841CD1AD95AD5000A2A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE841CF1AD95AD5000A2A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bitcamp2015 try #2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDE841D01AD95AD5000A2A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bitcamp2015 try #2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDE841D21AD95AD5000A2A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bitcamp2015 try #2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitcamp2015 try #2.app/bitcamp2015 try #2";
+			};
+			name = Debug;
+		};
+		CDE841D31AD95AD5000A2A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bitcamp2015 try #2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bitcamp2015 try #2.app/bitcamp2015 try #2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE841A81AD95AD5000A2A52 /* Build configuration list for PBXProject "bitcamp2015 try #2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE841CC1AD95AD5000A2A52 /* Debug */,
+				CDE841CD1AD95AD5000A2A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE841CE1AD95AD5000A2A52 /* Build configuration list for PBXNativeTarget "bitcamp2015 try #2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE841CF1AD95AD5000A2A52 /* Debug */,
+				CDE841D01AD95AD5000A2A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDE841D11AD95AD5000A2A52 /* Build configuration list for PBXNativeTarget "bitcamp2015 try #2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE841D21AD95AD5000A2A52 /* Debug */,
+				CDE841D31AD95AD5000A2A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE841A51AD95AD5000A2A52 /* Project object */;
+}
