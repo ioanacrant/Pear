@@ -15,7 +15,6 @@
 		CDE841BF1AD95AD5000A2A52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE841BD1AD95AD5000A2A52 /* LaunchScreen.xib */; };
 		CDE841CB1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841CA1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift */; };
 		CDE841D51AD95AF7000A2A52 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841D41AD95AF7000A2A52 /* News.swift */; };
-		CDE841DB1AD96B9F000A2A52 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE841DA1AD96B9F000A2A52 /* NewsCell.xib */; };
 		CDE841DD1AD96CB9000A2A52 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841DC1AD96CB9000A2A52 /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		CDE841C91AD95AD5000A2A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE841CA1AD95AD5000A2A52 /* bitcamp2015_try__2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitcamp2015_try__2Tests.swift; sourceTree = "<group>"; };
 		CDE841D41AD95AF7000A2A52 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		CDE841DA1AD96B9F000A2A52 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		CDE841DC1AD96CB9000A2A52 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 				CDE841D41AD95AF7000A2A52 /* News.swift */,
 				CDE841B61AD95AD5000A2A52 /* DetailViewController.swift */,
 				CDE841B81AD95AD5000A2A52 /* Main.storyboard */,
-				CDE841DA1AD96B9F000A2A52 /* NewsCell.xib */,
 				CDE841DC1AD96CB9000A2A52 /* NewsCell.swift */,
 				CDE841BB1AD95AD5000A2A52 /* Images.xcassets */,
 				CDE841BD1AD95AD5000A2A52 /* LaunchScreen.xib */,
@@ -206,7 +203,6 @@
 			files = (
 				CDE841BA1AD95AD5000A2A52 /* Main.storyboard in Resources */,
 				CDE841BF1AD95AD5000A2A52 /* LaunchScreen.xib in Resources */,
-				CDE841DB1AD96B9F000A2A52 /* NewsCell.xib in Resources */,
 				CDE841BC1AD95AD5000A2A52 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
