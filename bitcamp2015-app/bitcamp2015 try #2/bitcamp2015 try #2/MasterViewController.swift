@@ -25,6 +25,7 @@ class MasterViewController: UITableViewController {
         
         let nibName = UINib(nibName: "NewsCell", bundle:nil)
         self.tableView.registerNib(nibName, forCellReuseIdentifier: "newsCell")
+        
         // Do any additional setup after loading the view, typically from a nib.
 
     }
@@ -44,6 +45,7 @@ class MasterViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
+            println("helloooo world")
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let object = objects[indexPath.row]
             (segue.destinationViewController as! DetailViewController).detailItem = object.fulltext
