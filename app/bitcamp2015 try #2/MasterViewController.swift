@@ -14,7 +14,7 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
     
     var testImage = UIImage(named: "ScreenShot")
     
-    lazy var data = NSMutableData()
+    //lazy var data = NSMutableData()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +27,8 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         
         //let nibName = UINib(nibName: "newsCell", bundle:nil)
         //self.tableView.registerNib(nibName, forCellReuseIdentifier: "newsCell")
-        startConnection()
+        
+        parseJSON(getJSON("http://localhost:5000/"))
         
         // Do any additional setup after loading the view, typically from a nib.
 
@@ -83,23 +84,24 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         return true
     }
 
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            objects.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-        }
+    
+    
+    func getJSON(urlToRequest: String) -> NSData{
+        return NSData(contentsOfURL: NSURL(string: urlToRequest)!)!
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("showDetail", sender: self)
+    func parseJSON(inputData: NSData){
+        let json = JSON(data: inputData)
+        //var json1 = ["news":"hello","a":"b"]
+        println(json.type)
+        println(json["news"])
+        /*var error: NSError?
+        let jsonDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: nil, error: &error) as? NSDictionary
+        println(jsonDictionary)
+        return jsonDictionary!*/
     }
     
-    
-    
-
-    func startConnection(){
+    /*func startConnection(){
         let urlPath: String = "http://localhost:5000/"
         var url: NSURL = NSURL(string: urlPath)!
         var request: NSURLRequest = NSURLRequest(URL: url)
@@ -110,13 +112,6 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
     
     func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
         self.data.appendData(data)
-        let json = JSON(data)
-        
-        if data == nil {
-            println("null")
-        } else{
-            println(json["news"][0])
-        }
         
     }
     
@@ -128,6 +123,6 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
         println(jsonResult)
     }
-    
+    */
     
 }

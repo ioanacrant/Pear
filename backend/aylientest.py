@@ -63,7 +63,10 @@ createDataSet()
 
 class GetData (Resource):
 	def get(self):
-		return json.dumps(dataSet)
+		DSString=str(dataSet)
+		DSString.replace("{","[")
+		DSString.replace("}","]")
+		return json.dumps(DSString)
 
 api.add_resource(GetData, "/")
 
