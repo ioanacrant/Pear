@@ -25,8 +25,9 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         objects.append(News(title: "hello", summary: "my name", fulltext: "is ioana", imageurl: "X"))
         objects.append(News(title: "hi", summary: "my name", fulltext: "is ioana", imageurl: "X"))
         
-        let nibName = UINib(nibName: "NewsCell", bundle:nil)
-        self.tableView.registerNib(nibName, forCellReuseIdentifier: "newsCell")
+        //let nibName = UINib(nibName: "newsCell", bundle:nil)
+        //self.tableView.registerNib(nibName, forCellReuseIdentifier: "newsCell")
+        startConnection()
         
         // Do any additional setup after loading the view, typically from a nib.
 
@@ -47,7 +48,6 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            println("helloooo world")
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let object = objects[indexPath.row]
             (segue.destinationViewController as! DetailViewController).detailItem = object.fulltext
@@ -110,12 +110,17 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
     
     func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
         self.data.appendData(data)
-        println(data)
+        let json = JSON(data)
         
-        var dataFile = data
+        if data == nil {
+            println("null")
+        } else{
+            println(json["news"][0])
+        }
+        
     }
     
-    let json = JSON(data: dataFile)
+    
     
     func connectionDidFinishLoading(connection: NSURLConnection!) {
         var err: NSError
