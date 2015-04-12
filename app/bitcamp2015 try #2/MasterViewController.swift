@@ -95,6 +95,7 @@ class MasterViewController: UITableViewController {
     func parseJSON(inputData: NSData){
         let json = JSON(data: inputData)
         //var json1 = ["news":"hello","a":"b"]
+        println("DSf")
         println(json.type)
         println(json["news"])
         /*var error: NSError?
