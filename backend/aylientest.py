@@ -63,6 +63,8 @@ createDataSet()
 
 class GetData (Resource):
 	def get(self):
+		print(dataSet)
+
 		return json.dumps(dataSet)
 
 api.add_resource(GetData, "/")

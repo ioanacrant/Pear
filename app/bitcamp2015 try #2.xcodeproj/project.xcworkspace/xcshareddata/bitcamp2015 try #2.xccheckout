@@ -14,11 +14,11 @@
 		<string>https://github.com/ioanacrant/bitcamp2015.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>bitcamp2015-app/bitcamp2015 try #2/bitcamp2015 try #2.xcodeproj</string>
+	<string>app/bitcamp2015 try #2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>080746A60DCB5AC49837DC5DB9B1D3CE9370E183</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ioanacrant/bitcamp2015.git</string>

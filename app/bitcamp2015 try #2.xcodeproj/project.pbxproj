@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDA63BFE1AD9A6B9007EE513 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA63BFD1AD9A6B9007EE513 /* SwiftyJSON.swift */; };
+		CD9644E81ADA36300005D8C6 /* FullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9644E71ADA36300005D8C6 /* FullViewController.swift */; };
 		CDE841B31AD95AD5000A2A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841B21AD95AD5000A2A52 /* AppDelegate.swift */; };
 		CDE841B51AD95AD5000A2A52 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841B41AD95AD5000A2A52 /* MasterViewController.swift */; };
 		CDE841B71AD95AD5000A2A52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE841B61AD95AD5000A2A52 /* DetailViewController.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CDA63BFD1AD9A6B9007EE513 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		CD9644E71ADA36300005D8C6 /* FullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullViewController.swift; sourceTree = "<group>"; };
 		CDE841AD1AD95AD5000A2A52 /* bitcamp2015 try #2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bitcamp2015 try #2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE841B11AD95AD5000A2A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE841B21AD95AD5000A2A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 		CDE841AF1AD95AD5000A2A52 /* bitcamp2015 try #2 */ = {
 			isa = PBXGroup;
 			children = (
-				CDA63BFD1AD9A6B9007EE513 /* SwiftyJSON.swift */,
 				CDE841B21AD95AD5000A2A52 /* AppDelegate.swift */,
+				CD9644E71ADA36300005D8C6 /* FullViewController.swift */,
 				CDE841B41AD95AD5000A2A52 /* MasterViewController.swift */,
 				CDE841D41AD95AF7000A2A52 /* News.swift */,
 				CDE841B61AD95AD5000A2A52 /* DetailViewController.swift */,
@@ -227,7 +227,7 @@
 				CDE841B71AD95AD5000A2A52 /* DetailViewController.swift in Sources */,
 				CDE841B51AD95AD5000A2A52 /* MasterViewController.swift in Sources */,
 				CDE841D51AD95AF7000A2A52 /* News.swift in Sources */,
-				CDA63BFE1AD9A6B9007EE513 /* SwiftyJSON.swift in Sources */,
+				CD9644E81ADA36300005D8C6 /* FullViewController.swift in Sources */,
 				CDE841B31AD95AD5000A2A52 /* AppDelegate.swift in Sources */,
 				CDE841DD1AD96CB9000A2A52 /* NewsCell.swift in Sources */,
 			);

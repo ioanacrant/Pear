@@ -8,13 +8,11 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController, NSURLConnectionDelegate {
+class MasterViewController: UITableViewController {
 
     var objects = [News]()
     
-    var testImage = UIImage(named: "ScreenShot")
-    
-    lazy var data = NSMutableData()
+    //lazy var data = NSMutableData()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,11 +20,11 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        objects.append(News(title: "hello", summary: "my name", fulltext: "is ioana", imageurl: "X"))
-        objects.append(News(title: "hi", summary: "my name", fulltext: "is ioana", imageurl: "X"))
+        objects.append(News(title: "Hey there!", summary: "What's up?", fulltext: "What is going on man aaaaaa", imageurl: "https://tctechcrunch2011.files.wordpress.com/2015/04/reviews-e1428677213553.jpg?w=738"))
+        objects.append(News(title: "Whaddup", summary: "My name is Ioana Crant", fulltext: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", imageurl: "https://tctechcrunch2011.files.wordpress.com/2015/04/6800805548_f3d337452d_o.jpg?w=738"))
         
-        let nibName = UINib(nibName: "NewsCell", bundle:nil)
-        self.tableView.registerNib(nibName, forCellReuseIdentifier: "newsCell")
+        //let nibName = UINib(nibName: "NewsCell", bundle:nil)
+        //self.tableView.registerNib(nibName, forCellReuseIdentifier: "newsCell")
         
         // Do any additional setup after loading the view, typically from a nib.
 
@@ -50,7 +48,7 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
             println("helloooo world")
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let object = objects[indexPath.row]
-            (segue.destinationViewController as! DetailViewController).detailItem = object.fulltext
+            (segue.destinationViewController as! DetailViewController).detailItem = object.summary
             }
         }
     }
@@ -72,8 +70,7 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         let object = objects[indexPath.row]
         
         cell.title.text = object.title
-        cell.backgroundImage.image = testImage
-        
+        cell.backgroundImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: object.imageurl)!)!)
         
         return cell
     }
@@ -92,13 +89,14 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         }
     }
     
+    /*
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("showDetail", sender: self)
     }
+*/
     
     
-    
-
+    /*
     func startConnection(){
         let urlPath: String = "http://localhost:5000/"
         var url: NSURL = NSURL(string: urlPath)!
@@ -115,14 +113,13 @@ class MasterViewController: UITableViewController, NSURLConnectionDelegate {
         var dataFile = data
     }
     
-    let json = JSON(data: dataFile)
-    
     func connectionDidFinishLoading(connection: NSURLConnection!) {
         var err: NSError
         // throwing an error on the line below (can't figure out where the error message is)
         var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
         println(jsonResult)
     }
+    */
     
     
 }
