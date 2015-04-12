@@ -72,8 +72,6 @@
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="gAO-J7-MZi"/>
                 <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DetailViewController" customModule="bitcamp2015_try__2" customModuleProvider="target" sceneMemberID="viewController">
                     <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0MX-mf-LyJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -88,6 +86,8 @@
                         <outlet property="GoToFull" destination="0MX-mf-LyJ" id="dMi-uG-6jw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="gAO-J7-MZi"/>
             </objects>
             <point key="canvasLocation" x="716.26666666666665" y="60.586666666666652"/>
         </scene>
