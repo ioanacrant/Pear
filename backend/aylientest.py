@@ -63,13 +63,12 @@ createDataSet()
 
 class GetData (Resource):
 	def get(self):
-		DSString=str(dataSet)
+		#DSString=str(dataSet)
 
-		DS= [["sample title 1", "sample summary 1"]]
-		DSString=DSString.replace("{","[")
-		DSString=DSString.replace("}","]")
-		print(DSString)
-		return json.dumps(DSString)
+		DS= [["sample title 1", "sample summary 1", "sample full text 1"], ["sample title 2", "sample summary 2", "sample full text 2"]]
+		
+		#print(DSString)
+		return json.dumps(DS)
 
 
 api.add_resource(GetData, "/")

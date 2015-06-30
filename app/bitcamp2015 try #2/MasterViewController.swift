@@ -69,14 +69,11 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    
         let cell = tableView.dequeueReusableCellWithIdentifier("newsCell", forIndexPath: indexPath) as! NewsCell
-
         let object = objects[indexPath.row]
         
         cell.title.text = object.title
         cell.backgroundImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: object.imageurl)!)!)
-        
         return cell
     }
 
@@ -91,41 +88,13 @@ class MasterViewController: UITableViewController {
         return NSData(contentsOfURL: NSURL(string: urlToRequest)!)!
     }
     
-
     func parseJSON(inputData: NSData){
         let json = JSON(data: inputData)
         //var json1 = ["news":"hello","a":"b"]
-        println("DSf")
-        println(json.type)
-        println(json["news"])
-        /*var error: NSError?
-        let jsonDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: nil, error: &error) as? NSDictionary
-        println(jsonDictionary)
-        return jsonDictionary!*/
+    
+        println(json[0][0].string)
+
     }
     
-    /*func startConnection(){
-        let urlPath: String = "http://localhost:5000/"
-        var url: NSURL = NSURL(string: urlPath)!
-        var request: NSURLRequest = NSURLRequest(URL: url)
-        var connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: false)!
-        connection.start()
-    }
-
-    
-    func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
-        self.data.appendData(data)
-        
-    }
-    
-
-    func connectionDidFinishLoading(connection: NSURLConnection!) {
-        var err: NSError
-        // throwing an error on the line below (can't figure out where the error message is)
-        var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
-        println(jsonResult)
-    }
-    */
-
     
 }
